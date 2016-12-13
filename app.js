@@ -133,7 +133,7 @@ var introState = {           // clone of the initial state of our page
     button: $('button').text()
 };
 function introAction() {
-    console.log('we here fam');
+    console.log('this should trigger only once');
     initQuestions();
 
     $('.js-heading').html(introState.heading);
