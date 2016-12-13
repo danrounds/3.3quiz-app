@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Quiz App!</title>
+    <link rel="stylesheet" href="main.css" type="text/css" media="screen" />
+  </head>
+  <body>
+
+    <div class="quiz-container container">
+      <div class="heading js-heading">
+        <h1>Culinary Quiz!</h1>
+      </div>
+
+      <div class="content js-text">
+        <p>Short quiz on culinary terminology.</p>
+      </div>
+
+      <div class="content js-question hidden">
+        <form id="question-box">
+          <input type="radio" name="q_1" id="ans-1" value="1"/><label for="ans-1">Answer One</label><br/>
+          <input type="radio" name="q_1" id="ans-2" value="2"/><label for="ans-2">Answer Two</label><br/>
+          <input type="radio" name="q_1" id="ans-3" value="3"/><label for="ans-3">Answer Three</label><br/>
+          <input type="radio" name="q_1" id="ans-4" value="4"/><label for="ans-4">Answer Four</label><br/>
+        </form>
+      </div>
+
+      <button type="submit">Let's get cooking</button>
+    </div>
+
+    <div class="footer">
+      <div class="status js-widget container hidden">
+        <div class="ques_k_of_n">Q: <span class="k">3</span> of <span class="n">7</span></div>
+        <div class="correctly_answered"><span class="n-right">0</span> right; <span class="n-wrong">0</span> wrong</div>
+      </div>
+    </div>
+
+
+    <script
+       src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+       integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+       crossorigin="anonymous"></script>
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+    <!-- <script src="http://localhost:8080/skewer"></script> <\!-- comment out, when done -\-> -->
+  </body>
+
+</html>
